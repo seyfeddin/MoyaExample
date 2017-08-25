@@ -14,6 +14,16 @@
 		CD4576F91F4F44AD00D5F28B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4576F71F4F44AD00D5F28B /* LaunchScreen.storyboard */; };
 		CD4577041F4F44AD00D5F28B /* MoyaExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4577031F4F44AD00D5F28B /* MoyaExampleTests.swift */; };
 		CD45770F1F4F44AD00D5F28B /* MoyaExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45770E1F4F44AD00D5F28B /* MoyaExampleUITests.swift */; };
+		CD4577201F4F4E3200D5F28B /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD45771D1F4F4E3200D5F28B /* Moya.framework */; };
+		CD4577211F4F4E3200D5F28B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD45771E1F4F4E3200D5F28B /* Result.framework */; };
+		CD4577221F4F4E3200D5F28B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD45771F1F4F4E3200D5F28B /* Alamofire.framework */; };
+		CD4577241F4F4E5600D5F28B /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4577231F4F4E5600D5F28B /* iTunesAPI.swift */; };
+		CD4577261F4F51A800D5F28B /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD45771D1F4F4E3200D5F28B /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD4577281F4F51A800D5F28B /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD45771E1F4F4E3200D5F28B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD45772A1F4F51A800D5F28B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD45771F1F4F4E3200D5F28B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD4577301F50628800D5F28B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD45772F1F50628800D5F28B /* SwiftyJSON.framework */; };
+		CD4577321F50629200D5F28B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD45772F1F50628800D5F28B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD4577341F50631D00D5F28B /* iTunesNetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4577331F50631D00D5F28B /* iTunesNetworkAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD45772B1F4F51A800D5F28B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD4577321F50629200D5F28B /* SwiftyJSON.framework in Embed Frameworks */,
+				CD4577261F4F51A800D5F28B /* Moya.framework in Embed Frameworks */,
+				CD45772A1F4F51A800D5F28B /* Alamofire.framework in Embed Frameworks */,
+				CD4577281F4F51A800D5F28B /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CD4576EB1F4F44AD00D5F28B /* MoyaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoyaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4576EE1F4F44AD00D5F28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +74,12 @@
 		CD45770A1F4F44AD00D5F28B /* MoyaExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD45770E1F4F44AD00D5F28B /* MoyaExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaExampleUITests.swift; sourceTree = "<group>"; };
 		CD4577101F4F44AD00D5F28B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD45771D1F4F4E3200D5F28B /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		CD45771E1F4F4E3200D5F28B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		CD45771F1F4F4E3200D5F28B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CD4577231F4F4E5600D5F28B /* iTunesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		CD45772F1F50628800D5F28B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		CD4577331F50631D00D5F28B /* iTunesNetworkAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesNetworkAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4577301F50628800D5F28B /* SwiftyJSON.framework in Frameworks */,
+				CD4577201F4F4E3200D5F28B /* Moya.framework in Frameworks */,
+				CD4577211F4F4E3200D5F28B /* Result.framework in Frameworks */,
+				CD4577221F4F4E3200D5F28B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,7 @@
 				CD4577021F4F44AD00D5F28B /* MoyaExampleTests */,
 				CD45770D1F4F44AD00D5F28B /* MoyaExampleUITests */,
 				CD4576EC1F4F44AD00D5F28B /* Products */,
+				CD45771C1F4F4E3100D5F28B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +141,8 @@
 				CD4576F51F4F44AD00D5F28B /* Assets.xcassets */,
 				CD4576F71F4F44AD00D5F28B /* LaunchScreen.storyboard */,
 				CD4576FA1F4F44AD00D5F28B /* Info.plist */,
+				CD4577231F4F4E5600D5F28B /* iTunesAPI.swift */,
+				CD4577331F50631D00D5F28B /* iTunesNetworkAdapter.swift */,
 			);
 			path = MoyaExample;
 			sourceTree = "<group>";
@@ -125,6 +165,17 @@
 			path = MoyaExampleUITests;
 			sourceTree = "<group>";
 		};
+		CD45771C1F4F4E3100D5F28B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD45772F1F50628800D5F28B /* SwiftyJSON.framework */,
+				CD45771D1F4F4E3200D5F28B /* Moya.framework */,
+				CD45771E1F4F4E3200D5F28B /* Result.framework */,
+				CD45771F1F4F4E3200D5F28B /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +186,7 @@
 				CD4576E71F4F44AD00D5F28B /* Sources */,
 				CD4576E81F4F44AD00D5F28B /* Frameworks */,
 				CD4576E91F4F44AD00D5F28B /* Resources */,
+				CD45772B1F4F51A800D5F28B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4577341F50631D00D5F28B /* iTunesNetworkAdapter.swift in Sources */,
 				CD4576F11F4F44AD00D5F28B /* ViewController.swift in Sources */,
+				CD4577241F4F4E5600D5F28B /* iTunesAPI.swift in Sources */,
 				CD4576EF1F4F44AD00D5F28B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MoyaExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.MoyaExample;
@@ -429,6 +487,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MoyaExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.MoyaExample;
